@@ -13,8 +13,8 @@ export default function Footer() {
               IN 46055
             </p>
             <p>
-              <a href="tel:3179438339" className="text-white hover:text-blue-300 font-semibold">
-                📞 (317) 943-8339
+              <a href="tel:3176438667" className="text-white hover:text-blue-300 font-semibold">
+                📞 317-643-8667
               </a>
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-600 text-center">
           <p className="text-white mb-2">
             © {new Date().getFullYear()}. All Rights Reserved. 
-            <a href="tel:3179438339" className="ml-2 hover:text-blue-300 transition-colors">(317) 943-8339</a>
+            <a href="tel:3176438667" className="ml-2 hover:text-blue-300 transition-colors">317-643-8667</a>
           </p>
           <p className="text-gray-400">
             Web Development by <a href="https://adrienbird.com/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-200 transition-colors">Bird Digital</a>

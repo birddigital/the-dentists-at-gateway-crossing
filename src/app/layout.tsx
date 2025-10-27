@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "The Dentists at Gateway Crossing",
-  description: "Premier dental care in McCordsville, IN. Call (317) 943-8339 for appointments.",
+  description: "Premier dental care in McCordsville, IN. Call 317-643-8667 for appointments.",
   keywords: 'dentist, dental care, McCordsville, Indiana, family dentistry, cosmetic dentistry',
 };
 

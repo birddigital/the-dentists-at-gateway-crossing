@@ -18,8 +18,8 @@ export default function Navigation() {
           <div className="flex-1 text-right">
             <div className="inline-flex items-center space-x-2">
               <span className="text-blue-600">📞 </span>
-              <a href="tel:3179438339" className="text-blue-600 font-semibold">
-                (317) 943-8339
+              <a href="tel:3176438667" className="text-blue-600 font-semibold">
+                317-643-8667
               </a>
             </div>
           </div>

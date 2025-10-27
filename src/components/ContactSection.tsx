@@ -15,10 +15,10 @@ export default function ContactSection() {
           <div className="lg:w-1/2 text-center">
             <div className="space-y-4">
               <a 
-                href="tel:3179438339" 
+                href="tel:3176438667" 
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block w-full sm:w-auto mb-4"
               >
-                📞 Call (317) 943-8339
+                📞 Call 317-643-8667
               </a>
               <div className="text-white opacity-90">
                 <p className="mb-2">
