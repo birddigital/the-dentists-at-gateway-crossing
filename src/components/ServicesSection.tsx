@@ -1,3 +1,5 @@
+import { getPhoneNumberForTel, getPhoneNumberDisplay } from '@/utils/phone'
+
 export default function ServicesSection() {
   const services = [
     {
@@ -54,10 +56,10 @@ export default function ServicesSection() {
                 {service.description}
               </p>
               <a 
-                href="tel:3176438667" 
+                href={`tel:${getPhoneNumberForTel()}`} 
                 className="bg-blue-600 text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 transition-colors"
               >
-                📞 Call 317-643-8667
+                📞 Call {getPhoneNumberDisplay()}
               </a>
             </div>
           ))}

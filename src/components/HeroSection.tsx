@@ -1,3 +1,5 @@
+import { getPhoneNumberForTel, getPhoneNumberDisplay } from '@/utils/phone'
+
 export default function HeroSection() {
   return (
     <section className="bg-gradient-to-r from-blue-50 to-blue-100 py-20">
@@ -13,10 +15,10 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="tel:3176438667" 
+                href={`tel:${getPhoneNumberForTel()}`} 
                 className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block text-center"
               >
-                📞 Call 317-643-8667
+                📞 Call {getPhoneNumberDisplay()}
               </a>
               <a 
                 href="/contact" 

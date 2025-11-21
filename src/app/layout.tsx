@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "The Dentists at Gateway Crossing",
-  description: "Premier dental care in McCordsville, IN. Call 317-643-8667 for appointments.",
+  description: `Premier dental care in McCordsville, IN. Call ${process.env.NEXT_PUBLIC_PHONE_NUMBER || '(317) 643-9434'} for appointments.`,
   keywords: 'dentist, dental care, McCordsville, Indiana, family dentistry, cosmetic dentistry',
 };
 
@@ -34,6 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <script type="text/javascript" src="//cdn.callrail.com/companies/721688612/19ba248eb19ed0915f87/12/swap.js" async></script>
       </body>
     </html>
   );
