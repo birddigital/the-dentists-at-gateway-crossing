@@ -28,5 +28,14 @@ export const getPhoneNumberDisplay = (): string => {
 
 // Format phone number for display with parentheses (e.g., (317) 643-9434)
 export const getPhoneNumberFormatted = (): string => {
-  return getPhoneNumber();
+  const phoneNumber = getPhoneNumber();
+  const digitsOnly = phoneNumber.replace(/\D/g, '');
+  
+  // Return in format: (XXX) XXX-XXXX
+  if (digitsOnly.length === 10) {
+    return `(${digitsOnly.slice(0, 3)}) ${digitsOnly.slice(3, 6)}-${digitsOnly.slice(6)}`;
+  }
+  
+  // Return as-is if format is unexpected
+  return phoneNumber;
 };
