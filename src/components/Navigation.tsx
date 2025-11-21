@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { getPhoneNumberForTel, getPhoneNumberDisplay } from '@/utils/phone'
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -18,8 +19,8 @@ export default function Navigation() {
           <div className="flex-1 text-right">
             <div className="inline-flex items-center space-x-2">
               <span className="text-blue-600">📞 </span>
-              <a href="tel:3176438667" className="text-blue-600 font-semibold">
-                317-643-8667
+              <a href={`tel:${getPhoneNumberForTel()}`} className="text-blue-600 font-semibold">
+                {getPhoneNumberDisplay()}
               </a>
             </div>
           </div>
